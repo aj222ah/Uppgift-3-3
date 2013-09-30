@@ -1,1 +1,145 @@
 /* Denna fil får du editera för att lösa uppgiften. Du får INTE ändra i html-filen. */
+
+/*  
+	Nollställning från:
+	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+    Färgsättning:
+    Bakgrund + menytext rgb(234, 231, 210)
+    Text + menybakgrund rgb(121, 112, 102)
+    Bakgrund logotype rgb(81, 71, 61)
+    Body-bakgrund rgb(252, 250, 244)
+*/
+
+body {
+    background-color: rgb(252, 250, 244);
+    font-family: Verdana;
+    font-size: 10pt;
+}
+
+#container {
+    width: 600px;
+    background-color: rgb(234, 231, 210);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#topbar {
+    background-color: rgb(81, 71, 61);
+    width: 590px;
+    text-align: right;
+    color: rgb(234, 231, 210);
+    font-size: 7.5pt;
+    font-style: italic;
+    padding: 5px;
+}
+
+#menu::before {
+    content: url(pics/coffey.jpg);
+    padding-bottom: 1px;
+}
+
+#menu {
+    background-color: rgb(81, 71, 61);
+    height: 240px;
+}
+
+a[href$="maincontent"] {
+    display: none;
+}
+
+#menu ul {
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+#menu ul li {
+    display: inline;
+    margin-left: -2px; 
+    margin-right: -2px;
+    vertical-align: -9px;
+}
+
+#menu ul li a {
+    padding: 20px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#menu ul li a:link {
+    background-color: rgb(121, 112, 102);
+    color: rgb(234, 231, 210);
+    text-decoration: none;
+}
+
+#menu ul li.active a:link {
+    background-color: rgb(234, 231, 210);
+    color: rgb(121, 112, 102);
+    text-decoration: none;
+}
+
+#content {
+    margin-top: 15px;
+}
+
+#maincontent {
+    float: left;
+    width: 350px;
+}
+
+#subcontent {
+    float: right;
+    width: 250px;
+}
+
+#bottomcontent {
+    clear: both;
+}
