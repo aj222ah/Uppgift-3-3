@@ -70,6 +70,7 @@ body {
     background-color: rgb(234, 231, 210);
     margin: 0 auto;
     margin-top: 20px;
+    border: 1px solid rgb(81, 71, 61);
 }
 
 #topbar {
@@ -77,7 +78,7 @@ body {
     width: 590px;
     text-align: right;
     color: rgb(234, 231, 210);
-    font-size: 7.5pt;
+    font-size: 7pt;
     font-style: italic;
     padding: 5px;
 }
@@ -105,7 +106,7 @@ a[href$="maincontent"] {
     display: inline;
     margin-left: -2px; 
     margin-right: -2px;
-    vertical-align: -9px;
+    vertical-align: -4px;
 }
 
 #menu ul li a {
@@ -132,7 +133,8 @@ a[href$="maincontent"] {
 
 #maincontent {
     float: left;
-    width: 350px;
+    width: 349px;
+    border-right: 1px dashed rgb(121, 112, 102);
 }
 
 #subcontent {
@@ -142,4 +144,76 @@ a[href$="maincontent"] {
 
 #bottomcontent {
     clear: both;
+}
+
+h1, h2 {
+    font-family: "Times New Roman";
+}
+
+p {
+    color: rgb(121, 112, 102);
+}
+
+#maincontent h1 {
+    font-size: 18pt;
+    color: rgb(121, 112, 102);
+    padding: 10px;
+}
+
+#maincontent p {
+    font-size: 10pt;
+    line-height: 155%;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+#subcontent h1, h2 {
+    font-size: 12pt;
+    color: rgb(121, 112, 102);
+    padding: 10px;
+    padding-top: 15px;
+}
+
+#subcontent h2 {
+    font-size: 11pt;
+    padding-bottom: 0;
+}
+
+#subcontent p {
+    font-size: 7pt;
+    line-height: 200%;
+    padding: 10px;
+}
+
+#subcontent ul {
+    padding-top: -5px;
+    margin-top: 0;
+}
+
+#subcontent ul li {
+    padding-top: 5px;
+}
+
+#subcontent ul li a:link{
+    color: rgb(121, 112, 102);
+    font-size: 10pt;
+}
+
+ul {
+    padding: 5px;
+    padding-left: 10px; 
+}
+
+#maincontent img {
+    padding: 5px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    float: left;
+}
+
+#bottomcontent {
+    font-size: 7pt;
+    font-style: italic;
+    color: rgb(121, 112, 102);
+    padding: 10px;
 }
