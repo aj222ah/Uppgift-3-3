@@ -55,24 +55,43 @@ table {
     Färgsättning:
     Bakgrund + menytext rgb(234, 231, 210)
     Text + menybakgrund rgb(121, 112, 102)
-    Bakgrund logotype rgb(81, 71, 61)
+    Bakgrund topbar rgb(81, 71, 61)
     Body-bakgrund rgb(252, 250, 244)
+    Hover meny rgb(156, 144, 132)
+    Border maincontent rgb(192, 192, 192)
+    Border sida rgb(206, 202, 185)
 */
 
+/* Generellt utseende */
 body {
     background-color: rgb(252, 250, 244);
     font-family: Verdana;
     font-size: 10pt;
 }
 
+h1, h2 {
+    font-family: "Times New Roman";
+}
+
+p {
+    color: rgb(121, 112, 102);
+}
+
+ul {
+    padding: 5px;
+    padding-left: 10px; 
+}
+
+/* Sidstorlek, placering och färger */
 #container {
-    width: 600px;
+    width: 598px;
     background-color: rgb(234, 231, 210);
     margin: 0 auto;
     margin-top: 20px;
-    border: 1px solid rgb(81, 71, 61);
+    border: 1px solid rgb(206, 202, 185);
 }
 
+/* Webbsidans "huvud" */
 #topbar {
     background-color: rgb(81, 71, 61);
     width: 590px;
@@ -88,6 +107,7 @@ body {
     padding-bottom: 1px;
 }
 
+/* Meny-layout */
 #menu {
     background-color: rgb(81, 71, 61);
     height: 240px;
@@ -104,7 +124,7 @@ a[href$="maincontent"] {
 
 #menu ul li {
     display: inline;
-    margin-left: -2px; 
+    margin-left: -1.75px; 
     margin-right: -2px;
     vertical-align: -4px;
 }
@@ -119,43 +139,40 @@ a[href$="maincontent"] {
     background-color: rgb(121, 112, 102);
     color: rgb(234, 231, 210);
     text-decoration: none;
+    text-transform: capitalize;
+}
+
+#menu ul li a:hover {
+    background-color: rgb(156, 144, 132);
 }
 
 #menu ul li.active a:link {
     background-color: rgb(234, 231, 210);
     color: rgb(121, 112, 102);
-    text-decoration: none;
 }
 
+/* Layout för innhållet */
 #content {
     margin-top: 15px;
 }
 
 #maincontent {
     float: left;
-    width: 349px;
-    border-right: 1px dashed rgb(121, 112, 102);
+    width: 363px;
+    border-right: 1px dashed rgb(192, 192, 192);
 }
 
 #subcontent {
     float: right;
-    width: 250px;
+    width: 234px;
 }
 
 #bottomcontent {
     clear: both;
 }
 
-h1, h2 {
-    font-family: "Times New Roman";
-}
-
-p {
-    color: rgb(121, 112, 102);
-}
-
 #maincontent h1 {
-    font-size: 18pt;
+    font-size: 24pt;
     color: rgb(121, 112, 102);
     padding: 10px;
 }
@@ -167,9 +184,16 @@ p {
     padding-left: 10px;
 }
 
+#maincontent img {
+    padding: 5px;
+    padding-left: 10px;
+    padding-bottom: 0;
+    float: left;
+}
+
 #subcontent h1, h2 {
-    font-size: 12pt;
-    color: rgb(121, 112, 102);
+    font-size: 13pt;
+    color: rgb(81, 71, 61);
     padding: 10px;
     padding-top: 15px;
 }
@@ -195,20 +219,8 @@ p {
 }
 
 #subcontent ul li a:link{
-    color: rgb(121, 112, 102);
+    color: rgb(81, 71, 61);
     font-size: 10pt;
-}
-
-ul {
-    padding: 5px;
-    padding-left: 10px; 
-}
-
-#maincontent img {
-    padding: 5px;
-    padding-left: 10px;
-    padding-bottom: 0px;
-    float: left;
 }
 
 #bottomcontent {
