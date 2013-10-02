@@ -1,10 +1,10 @@
 /* Denna fil får du editera för att lösa uppgiften. Du får INTE ändra i html-filen. */
 
-/*  
-	Nollställning från:
-	http://meyerweb.com/eric/tools/css/reset/ 
-	v2.0 | 20110126
-	License: none (public domain)
+/*
+Nollställning från:
+http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -16,50 +16,50 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+display: block;
 }
 body {
-	line-height: 1;
+line-height: 1;
 }
 ol, ul {
-	list-style: none;
+list-style: none;
 }
 blockquote, q {
-	quotes: none;
+quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+content: '';
+content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+border-collapse: collapse;
+border-spacing: 0;
 }
 
-/* 
-    Färgsättning:
-    Bakgrund + menytext rgb(234, 231, 210)
-    Text + menybakgrund rgb(121, 112, 102)
-    Bakgrund topbar rgb(81, 71, 61)
-    Body-bakgrund rgb(252, 250, 244)
-    Hover meny rgb(156, 144, 132)
-    Border maincontent rgb(192, 192, 192)
-    Border sida rgb(206, 202, 185)
+/*
+Färgsättning:
+Bakgrund + menytext rgb(234, 231, 210)
+Text + menybakgrund rgb(121, 112, 102)
+Bakgrund topbar rgb(81, 71, 61)
+Body-bakgrund rgb(252, 250, 244)
+Hover meny rgb(156, 144, 132)
+Border maincontent rgb(192, 192, 192)
+Border sida rgb(206, 202, 185)
 */
 
 /* Generellt utseende */
@@ -79,7 +79,7 @@ p {
 
 ul {
     padding: 5px;
-    padding-left: 10px; 
+    padding-left: 10px;
 }
 
 /* Sidstorlek, placering och färger */
@@ -124,13 +124,13 @@ a[href$="maincontent"] {
 
 #menu ul li {
     display: inline;
-    margin-left: -1.75px; 
+    margin-left: -1.75px;
     margin-right: -2px;
     vertical-align: -4px;
 }
 
 #menu ul li a {
-    padding: 20px; 
+    padding: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -200,7 +200,7 @@ a[href$="maincontent"] {
 
 #subcontent h2 {
     font-size: 11pt;
-    padding-bottom: 0;
+    padding-bottom: 5px;
 }
 
 #subcontent p {
@@ -210,8 +210,8 @@ a[href$="maincontent"] {
 }
 
 #subcontent ul {
-    padding-top: -5px;
-    margin-top: 0;
+    padding-top: 0;
+    margin-top: -5px;
 }
 
 #subcontent ul li {
